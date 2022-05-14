@@ -16,7 +16,7 @@ html {
     font-size: 62.5%;
 }
 
-body {
+body, button {
     font-family: 'Montserrat', sans-serif;
     font-size: 15px;
 }
