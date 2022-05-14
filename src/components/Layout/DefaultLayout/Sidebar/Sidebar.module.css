@@ -1,0 +1,67 @@
+.wrapper {
+    height: 900px;
+    width: 300px;
+    background-color: #171f29;
+}
+
+.sidebar-brand {
+    padding: 15px;
+    background-color: #171f29;
+    margin-bottom: 1px;
+    box-shadow: 0 .125rem .25rem rgba(234, 228, 228, 0.15);
+}
+.brand-name {
+    line-height: 1.38;
+    white-space: nowrap;
+    width: 140px;
+    color: #f7faff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pro-name {
+    display: flex;
+}
+
+.rounded-circle {
+    width: 12px;
+    height: 12px;
+    background-color: #39e500;
+    border-radius: 50%;
+    margin-top: 5px;
+    margin-right: 10px;
+}
+
+.pro-name p {
+    line-height: 24px;
+    font-size: 13px;
+    color: #99A5B5;
+}
+
+.menu-icon {
+    color: #99A5B5;
+    margin-right: 25px;
+    margin-top: 7px;
+}
+
+.sidebar-menu ul li {
+    background-color: #171f29;
+}
+.sidebar-menu ul li a {
+    display: flex;
+    padding: 10px 20px 10px 20px;
+    line-height: 1.87;
+}
+
+.sidebar-menu ul li a:hover {
+    background-color: #10161d;
+}
+.sidebar-menu ul li a:hover p , .sidebar-menu ul li a:hover .menu-icon{
+    color: #f7faff;
+}
+
+.sidebar-menu ul li a p {
+    color: #99A5B5;
+}
+
+

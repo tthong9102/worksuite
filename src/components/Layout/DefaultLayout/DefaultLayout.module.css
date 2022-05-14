@@ -1,0 +1,12 @@
+.wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+}
+
+.content {
+    background-color: #fff;
+}

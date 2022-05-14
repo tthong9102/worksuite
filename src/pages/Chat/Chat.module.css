@@ -1,0 +1,12 @@
+.wrapper {
+    background-color: #f2f4f7;
+    height: 823px;
+    padding-left: 40px;
+}
+.page-name {
+    line-height: 1.17;
+    font-size: 18px;
+    color: #28313c;
+    font-weight: 700;
+    padding-top: 20px;
+}
