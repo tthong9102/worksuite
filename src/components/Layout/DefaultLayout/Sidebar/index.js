@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Link } from "react-router-dom";
-import ReactShadowScroll from 'react-shadow-scroll';
 
 import styles from './Sidebar.module.css';
 import { faBuildingUser, faCalendar, faComment, faHeadset, faHome, faSquarePollHorizontal, faUserGroup } from '@fortawesome/free-solid-svg-icons';

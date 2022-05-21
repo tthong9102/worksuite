@@ -4,7 +4,8 @@
 }
 
 .container {
-    width: 80%;
+    padding-left: 300px;
+    width: 100%;
 }
 
 .content {
