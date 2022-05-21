@@ -3,6 +3,8 @@
     width: 300px;
     background-color: #171f29;
     position: fixed;
+    top: 0;
+    left: 0;
 }
 
 .sidebar-brand {
