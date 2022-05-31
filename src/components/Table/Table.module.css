@@ -1,0 +1,11 @@
+.search {
+    margin-bottom: 20px;
+    position: absolute;
+    top: 138px;
+    left: 60%;
+}
+
+.client-table {
+    padding: 5px 15px 20px 15px;
+    background-color: #fff;
+}

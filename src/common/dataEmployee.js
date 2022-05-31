@@ -1,6 +1,6 @@
 export const headerData = [
   {
-    Header: "ID",
+    Header: "#",
     accessor: "id",
   },
   {

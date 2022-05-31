@@ -17,20 +17,12 @@ function Employees() {
     return (
         <div className={cx('wrapper')}>
             <h1 className={cx('page-name')}>Nhân viên</h1>
-            <div className={cx('table-actions row')}>
-                <div className={cx('col-6')}>
-                    <button className={cx('add-btn')}>
-                        <FontAwesomeIcon className={cx('plus-icon')} icon={faPlus} />
-                        Thêm nhân viên
-                    </button>
-                </div>
-                <div className={cx('col-6')}>
-                    <GlobalFilter ></GlobalFilter>
-                </div>
-                
-                
+            <div className={cx('table-actions')}>
+                <button className={cx('add-btn')}>
+                    <FontAwesomeIcon className={cx('plus-icon')} icon={faPlus} />
+                    Thêm nhân viên
+                </button>
             </div>
-
             <div className={cx('inner')}>
                 <Table columns={columns} data={data}></Table>
             </div>

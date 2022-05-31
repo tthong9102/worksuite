@@ -13,47 +13,60 @@ function Table ({columns, data}) {
         headerGroups,
         rows,
         prepareRow,
+        state,
+        setGlobalFilter,
     } = useTable(
         {
             columns,
             data,
         },
+        useGlobalFilter,
         useSortBy,
     )
+    
+    const { globalFilter } = state
 
     return (
-        <table {...getTableProps()} className={cx('table')}>
-        <thead>
-            {headerGroups.map(headerGroup => (
-                <tr {...headerGroup.getHeaderGroupProps()}>
-                    {headerGroup.headers.map(column => (
-                        <th {...column.getHeaderProps(column.getSortByToggleProps())}>
-                            {column.render('Header')}
-                            <span>
-                            {column.isSorted
-                            ? column.isSortedDesc
-                                ? <span> &#8595;</span>
-                                : <span> &#8593;</span>
-                                : ''}
-                            </span>
-                        </th>
-                    ))}
-                </tr>
-            ))}
-        </thead>
-        <tbody {...getTableBodyProps()}>
-            {rows.map((row, i) => {
-            prepareRow(row)
-            return (
-                <tr {...row.getRowProps()}>
-                {row.cells.map(cell => {
-                    return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+        <>
+        <div className={cx('search')}>
+            <GlobalFilter filter={globalFilter} setFilter={setGlobalFilter}/>
+        </div>
+        <div className={cx('client-table')}>
+            <table {...getTableProps()} className={cx('table')}>
+            <thead>
+                {headerGroups.map(headerGroup => (
+                    <tr {...headerGroup.getHeaderGroupProps()}>
+                        {headerGroup.headers.map(column => (
+                            <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                                {column.render('Header')}
+                                <span>
+                                {column.isSorted
+                                ? column.isSortedDesc
+                                    ? <span> &#8595;</span>
+                                    : <span> &#8593;</span>
+                                    : ''}
+                                </span>
+                            </th>
+                        ))}
+                    </tr>
+                ))}
+            </thead>
+            <tbody {...getTableBodyProps()}>
+                {rows.map((row, i) => {
+                prepareRow(row)
+                return (
+                    <tr {...row.getRowProps()}>
+                    {row.cells.map(cell => {
+                        return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                    })}
+                    </tr>
+                )
                 })}
-                </tr>
-            )
-            })}
-        </tbody>
-        </table>
+            </tbody>
+            </table>
+        </div>
+        
+        </>
     );
 }
 
