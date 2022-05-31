@@ -3,14 +3,19 @@
 :root {
     --primary: #171f29;
 }
-
-* {
+/* Reset CSS */
+p, h1, h2, h3, h4, h5, h6, ol, ul, a, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     list-style: none;
 	text-decoration: none;
 }
+
+* {
+    box-sizing: border-box;
+    outline: none;
+}
+/* --- */
 
 html {
     font-size: 62.5%;

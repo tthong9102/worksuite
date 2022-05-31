@@ -1,13 +1,17 @@
 .wrapper {
     height: 76.7px;
-    background-color: #fff;
     margin-bottom: 2px;
+    background-color: #fff;
     box-shadow: 0 .125rem .25rem rgba(0,0,0,15%);
+    position: fixed;
+    right: 0;
+    left: 250px;
+    z-index: 3;
 }
 
 .header-right { 
     float: right;
-    width: 150px;
+    width: 202px;
     line-height: 76.7px;
 }
 
@@ -25,4 +29,8 @@
 .search-icon, .plus-icon, .bell-icon, .power-off-icon {
     font-size: 16px;
     color: #616e80;
+}
+
+button {
+    background-color: transparent;
 }

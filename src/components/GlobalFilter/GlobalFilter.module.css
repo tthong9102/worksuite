@@ -1,0 +1,46 @@
+.form-control {
+    height: 37px;
+    border: 1px solid #dee2e6;
+    width: 250px;
+    padding-left: 6px;
+}
+
+.btn {
+    padding: 5px 14px;
+    background-color: #dee2e6;
+    border: none;
+}
+
+.search-icon {
+    font-size: 14px;
+    color: #adb5bd;
+}
+
+/* Định dạng placeholder cho search input */
+/* Chrome, Opera, Safari */
+::-webkit-input-placeholder 
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Firefox 19+ */
+::-moz-placeholder 
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* IE 10+ */
+:-ms-input-placeholder 
+{
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* Firefox 18- */
+:-moz-placeholder 
+{
+    font-style: italic;
+    font-size: 14px;
+}
