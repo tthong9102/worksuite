@@ -4,7 +4,7 @@ import styles from './GlobalFilter.module.css';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 const cx = classNames.bind(styles)
 
-function GlobalFilter( { filter, setFilter }) {
+function GlobalFilter() {
     return (
         <span>
         <div className={cx('input-group')}>
