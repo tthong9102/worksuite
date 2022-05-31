@@ -1,7 +1,8 @@
 .wrapper {
     background-color: #f2f4f7;
-    height: 823px;
+    height: 100%;
     padding-left: 40px;
+    padding-top: 76.7px;
 }
 .page-name {
     line-height: 1.17;
@@ -9,4 +10,44 @@
     color: #28313c;
     font-weight: 700;
     padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.elements {
+    padding: 20px;
+    box-shadow: 0 0 4px 0 #e8eef3;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    border-radius: 0.25rem;
+}
+
+.block-title {
+    text-transform: capitalize;
+    display: block;
+}
+
+.title {
+    font-size: 15px;
+    color: #4d4f5c;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+
+.col-4 {
+    flex: 0 0 25%;
+    max-width: 30%;
+    margin-bottom: 1rem;
+    margin-left: 60px;
+}
+
+.number {
+    color: inherit;
+    font-weight: 800;
+}
+
+.icon {
+    color: #99A5B5;
 }
