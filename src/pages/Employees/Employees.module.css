@@ -1,7 +1,8 @@
 .wrapper {
     background-color: #f2f4f7;
-    height: 823px;
+    height: 100%;
     padding-left: 40px;
+    padding-top: 76.7px;
 }
 .page-name {
     line-height: 1.17;
@@ -9,4 +10,35 @@
     color: #28313c;
     font-weight: 700;
     padding-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+.add-btn {
+    background-color: #1d82f5;
+    padding: 8px 6px;
+    margin-right: 200px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.table-actions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.add-btn:hover {
+    background-color: #000;
+}
+
+.plus-icon {
+    margin-right: 6px;
+}
+
+.inner {
+    margin: 30px 40px 30px 0;
+    padding: 5px 15px 20px 15px;
+    background-color: #fff;
 }
