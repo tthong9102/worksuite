@@ -1,8 +1,9 @@
 .wrapper {
     background-color: #f2f4f7;
-    height: 823px;
+    padding-right: 40px;
     padding-left: 40px;
     padding-top: 76.7px;
+    
 }
 .page-name {
     line-height: 1.17;
@@ -10,4 +11,20 @@
     color: #28313c;
     font-weight: 700;
     padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.add-btn {
+    background-color: #1d82f5;
+    padding: 8px 6px;
+    margin-right: 200px;
+    margin-bottom: 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #fff;
+}
+
+.calendar {
+    margin-bottom: 30px;
 }
