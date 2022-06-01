@@ -4,8 +4,6 @@ import Table from '../../components/Table';
 import { headerData, bodyData } from '../../common/dataClient'; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-import GlobalFilter from '../../components/GlobalFilter';
-import { useGlobalFilter } from 'react-table'
 const cx = classNames.bind(styles)
 
 function Clients() {

@@ -1,8 +1,9 @@
 .wrapper {
     background-color: #f2f4f7;
-    height: 100%;
     padding-left: 40px;
     padding-top: 76.7px;
+    padding-bottom: 10px;
+    min-height: calc(100vh - 0px);
 }
 .page-name {
     line-height: 1.17;
