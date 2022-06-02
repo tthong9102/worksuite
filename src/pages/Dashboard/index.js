@@ -28,7 +28,7 @@ function Dashboard() {
               <div className={cx("block-title")}>
                 <h5 className={cx("title")}>Số lượng khách hàng</h5>
                 <div className={cx("number")}>
-                  <p>100</p>
+                  <p>50</p>
                 </div>
               </div>
               <div className={cx("icon")}>
@@ -60,7 +60,7 @@ function Dashboard() {
               <div className={cx("block-title")}>
                 <h5 className={cx("title")}>Số lượng công việc</h5>
                 <div className={cx("number")}>
-                  <p>100</p>
+                  <p>30</p>
                 </div>
               </div>
               <div className={cx("icon")}>
