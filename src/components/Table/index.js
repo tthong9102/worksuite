@@ -1,6 +1,7 @@
 import classNames from 'classnames/bind';
+import { useTable, useSortBy, useGlobalFilter, usePagination } from 'react-table';
+
 import styles from './Table.module.css';
-import { useTable, useSortBy, useGlobalFilter, usePagination } from 'react-table'
 import GlobalFilter from '../GlobalFilter';
 
 const cx = classNames.bind(styles)
@@ -70,11 +71,13 @@ function Table ({columns, data}) {
                     return (
                         <tr {...row.getRowProps()}>
                         {row.cells.map(cell => {
-                            return <td {...cell.getCellProps()}>{cell.render('Cell')}</td>
+                            return <td {...cell.getCellProps()}><p>{cell.render('Cell')}</p></td>
                         })}
                         </tr>
+                        
                     )
                     })}
+                    
                 </tbody>
             </table>
 

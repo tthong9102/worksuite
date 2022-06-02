@@ -1,26 +1,3 @@
-export const headerData = [
-    {
-        Header: '#',
-        accessor: 'id',
-    },
-    {
-        Header: 'Họ và tên',
-        accessor: 'name',
-    },
-    {
-        Header: 'Email',
-        accessor: 'email',
-    },
-    {
-        Header: 'Số điện thoại',
-        accessor: 'phone',
-    },
-    {
-        Header: 'Ngày tham gia',
-        accessor: 'date',
-    }
-];
-
 export const bodyData = 
 [{
     "id": 1,

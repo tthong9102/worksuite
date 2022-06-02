@@ -1,26 +1,3 @@
-export const headerData = [
-  {
-    Header: "#",
-    accessor: "id",
-  },
-  {
-    Header: "Nội dung",
-    accessor: "content",
-  },
-  {
-    Header: "Ngày tạo",
-    accessor: "dateCreated",
-  },
-  {
-    Header: "Người nhận",
-    accessor: "receiver",
-  },
-  {
-    Header: "Hành động",
-    accessor: "action",
-  },
-];
-
 export const bodyData = [
   {
     id: 1,

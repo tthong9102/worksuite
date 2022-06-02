@@ -41,3 +41,25 @@
 .inner {
     margin: 30px 40px 30px 0;
 }
+
+.action button {   
+    color: #99A5B5;
+    padding: 0 12px;
+    border-radius: 4px;
+    border: 1px solid #99A5B5;
+    text-align: center;
+}
+
+.action button:hover {
+    background-color: #f2f4f7;
+
+}
+
+.action-icon:hover {
+    color: #000;
+}
+
+.action-icon {
+    font-size: 18px;
+    line-height: 30px;
+}
