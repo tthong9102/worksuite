@@ -4,7 +4,6 @@ import styles from './Employees.module.css';
 import Table from '../../components/Table';
 import { headerData, bodyData } from '../../common/dataEmployee';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import GlobalFilter from '../../components/GlobalFilter';
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
 
 const cx = classNames.bind(styles)
