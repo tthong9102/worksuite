@@ -45,11 +45,10 @@ function Employees() {
             accessor: "action",
             Cell: row => (
               <div className={cx('action')}>
-                
                     <button onClick={e=> handleEdit(row.row.original)} id="dropdown-basic-button">
                         <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical} />
-                        
                     </button>
+
                     {/* <Dropdown>
                         <Dropdown.Toggle className={cx('dropdown-toggle')}>
                             <button type='button'>
@@ -67,12 +66,9 @@ function Employees() {
                         <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
                         <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
                     </DropdownButton> */}
-                    
-                    
-                    
-            </div>
-              ),
-          },
+                </div>
+            ),
+        },
     ];
 
     function handleEdit(row) {
