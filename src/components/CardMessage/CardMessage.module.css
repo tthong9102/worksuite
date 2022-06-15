@@ -1,0 +1,57 @@
+.card-horizontal {
+    display: flex;
+    flex: 1 1 auto;
+}
+.card-horizontal:hover {
+    background-color: #E8EEF3;
+}
+.card-img {    
+    margin: 1.25rem;
+    border: 1px solid #e8eef3;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 4px;
+    overflow: hidden;
+    flex-shrink: 0; /*để cho hình ảnh chỗ card ko bị thu hẹp*/
+}
+.card-img img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-style: none;
+    vertical-align: middle;
+}
+.card-body {
+    flex: 1 1 auto;
+    min-height: 1px;
+    padding: 1.25rem;
+    padding-left: 0;
+    border: 0;
+
+}
+.header {
+    justify-content: space-between;
+    display: flex;
+}
+.card-title {
+    color: #28323c;
+    line-height: 1;
+    font-size: 12px;
+    font-weight: 700;
+}
+.card-date {
+    color: #28323c;
+    line-height: 1;
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.card-text {
+    color: #616e80;
+    line-height: 1.62;
+    font-size: 11px;
+    justify-content: space-between;
+    display: flex;
+    margin-top: 10px;
+}
