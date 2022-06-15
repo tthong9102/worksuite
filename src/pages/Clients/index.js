@@ -1,9 +1,12 @@
 import classNames from 'classnames/bind';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { Dropdown } from 'react-bootstrap';
+import { faEllipsisVertical, faEye, faPenToSquare, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+
 import styles from './Clients.module.css';
 import Table from '../../components/Table';
 import { headerData, bodyData } from '../../common/dataClient'; 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisVertical, faPlus } from '@fortawesome/free-solid-svg-icons';
+
 const cx = classNames.bind(styles)
 
 function Clients() {
@@ -34,12 +37,28 @@ function Clients() {
             Header: "Hành động",
             accessor: "action",
             Cell: row => (
-              <div className={cx('action')}>
-                    <button onClick={e=> handleEdit(row.row.original)} >
-                        <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical} />
-                    </button>
-              </div>
-              ),
+                <div className={cx('action')}>
+                    <Dropdown>
+                        <Dropdown.Toggle  type='button' className={cx('dropdown-toggle')}>
+                            <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical}/>
+                        </Dropdown.Toggle>
+                        <Dropdown.Menu>
+                            <Dropdown.Item href="#/action-1">
+                                <FontAwesomeIcon className={cx('view-icon')} icon={faEye}/>
+                                <p>Xem</p>
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">
+                                <FontAwesomeIcon className={cx('edit-icon')} icon={faPenToSquare}/>
+                                <p>Chỉnh sửa</p>
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">
+                                <FontAwesomeIcon className={cx('delete-icon')} icon={faTrash}/>
+                                <p>Xóa</p>
+                            </Dropdown.Item>
+                        </Dropdown.Menu>
+                    </Dropdown>
+                </div>
+            ),
           },
     ];
 

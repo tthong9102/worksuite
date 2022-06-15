@@ -1,7 +1,10 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import styles from './Header.module.css'
 import { faBell, faCirclePlus, faPowerOff, faSearch } from '@fortawesome/free-solid-svg-icons';
+import { Dropdown } from 'react-bootstrap';
+import { faEllipsisVertical, faEye, faPenToSquare, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+
+import styles from './Header.module.css'
 
 const cx = classNames.bind(styles)
 

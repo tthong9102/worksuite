@@ -59,6 +59,15 @@
 .sidebar-menu ul li a:hover {
     background-color: #10161d;
 }
+
+.sidebar-menu ul li a:focus {
+    background-color: #10161d;
+}
+
+.sidebar-menu ul li a:focus p {
+    color: #f7faff;
+}
+
 .sidebar-menu ul li a:hover p , .sidebar-menu ul li a:hover .menu-icon{
     color: #f7faff;
 }

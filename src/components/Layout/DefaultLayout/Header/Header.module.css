@@ -34,3 +34,18 @@
 button {
     background-color: transparent;
 }
+
+/* .header-right ul li .dropdown-toggle::after {
+    content: none;
+} */
+
+/* .header-right ul li .dropdown-toggle {
+    background-color: #fff;
+    color: #99A5B5;
+    border: 1px solid #99A5B5;
+}
+
+.header-right ul li .dropdown-toggle:hover{
+    color: #000;
+    border: 1px solid #99A5B5;
+} */
