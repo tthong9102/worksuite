@@ -1,24 +1,13 @@
 import classNames from 'classnames/bind';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEllipsisVertical, faPlus } from '@fortawesome/free-solid-svg-icons';
-// import { DropdownButton, Dropdown } from 'react-bootstrap';
+import { faEllipsisVertical, faEye, faPenToSquare, faPlus, faTrash } from '@fortawesome/free-solid-svg-icons';
+import { Dropdown } from 'react-bootstrap';
 
 import styles from './Employees.module.css';
 import Table from '../../components/Table';
 import { bodyData } from '../../common/dataEmployee';
 
 const cx = classNames.bind(styles)
-
-// function handleEdit(row) {
-//     console.log(row);
-// }
-// function Buttonn() {
-//     return (
-//         <button  >
-//             <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical} />
-//         </button>
-//     );
-// }
 
 function Employees() {
     
@@ -43,37 +32,36 @@ function Employees() {
           {
             Header: "Hành động",
             accessor: "action",
+            
             Cell: row => (
-              <div className={cx('action')}>
-                    <button onClick={e=> handleEdit(row.row.original)} id="dropdown-basic-button">
-                        <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical} />
-                    </button>
-
-                    {/* <Dropdown>
-                        <Dropdown.Toggle className={cx('dropdown-toggle')}>
-                            <button type='button'>
-                                <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical}/>
-                            </button>
+                <div className={cx('action')}>
+                    <Dropdown>
+                        <Dropdown.Toggle  type='button' className={cx('dropdown-toggle')}>
+                            <FontAwesomeIcon className={cx('action-icon')} icon={faEllipsisVertical}/>
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+                            <Dropdown.Item href="#/action-1">
+                                <FontAwesomeIcon className={cx('view-icon')} icon={faEye}/>
+                                <p>Xem</p>
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-2">
+                                <FontAwesomeIcon className={cx('edit-icon')} icon={faPenToSquare}/>
+                                <p>Chỉnh sửa</p>
+                            </Dropdown.Item>
+                            <Dropdown.Item href="#/action-3">
+                                <FontAwesomeIcon className={cx('delete-icon')} icon={faTrash}/>
+                                <p>Xóa</p>
+                            </Dropdown.Item>
                         </Dropdown.Menu>
-                    </Dropdown> */}
-                    {/* <DropdownButton id="dropdown-basic-button" >
-                        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </DropdownButton> */}
+                    </Dropdown>
                 </div>
             ),
         },
     ];
 
-    function handleEdit(row) {
-        console.log(row);
-    }
+    // function handleEdit(row) {
+    //     console.log(row);
+    // }
 
     // bodyData
     const data = bodyData;
