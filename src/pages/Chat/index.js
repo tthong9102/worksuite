@@ -4,6 +4,7 @@ import Search from "../../components/Search";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import CardMessage from "../../components/CardMessage";
+import ReplyMessage from "../../components/ReplyMessage";
 
 const cx = classNames.bind(styles);
 
@@ -47,6 +48,7 @@ function Chat() {
           <div className={cx("chat-box")}>
               <div className={cx("chat")}>
                 <div className={cx("ticket-msg")}>
+                  <ReplyMessage/>
                   
                 </div>
                 <div className={cx("typing")}>
